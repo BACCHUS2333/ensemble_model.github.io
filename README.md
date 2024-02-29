@@ -55,13 +55,31 @@ To use the ensemble model implemented in this repository, follow these steps:
 
 This project is licensed under the [MIT License](LICENSE).
 
----
-
-Feel free to customize this README to include any additional information or instructions specific to your project. If you have any questions or need further assistance, don't hesitate to reach out to the repository maintainers. Happy modeling!
+Certainly! Here's how you can add the warning to your README file:
 
 
-Absolutely! Here's a lighthearted joke to add a touch of humor to your README:
+---------------------------------------------------------------------------------
+## ⚠️ Warning
 
+If you encounter an error message like "cannot find Sequence in collections," you may need to alter the library imports in the code. This error typically occurs when trying to run code written for Python 2 in a Python 3 environment, as the `collections.Sequence` abstract base class was removed in Python 3.
+
+To resolve this issue, consider updating the library imports to use `collections.abc.Sequence` instead. This change ensures compatibility with both Python 2 and Python 3 environments.
+
+For example, if you have code like:
+
+```python
+from collections import Sequence
+```
+
+You should replace it with:
+
+```python
+from collections.abc import Sequence
+```
+
+If you continue to encounter issues or need further assistance, feel free to reach out for support.
+
+---------------------------------------------------------------------------------
 Bonus Joke 😄
 Why don't scientists trust atoms?
 
